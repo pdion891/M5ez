@@ -5,7 +5,7 @@
 
 
 // Comment out the line below to disable WPS.
-#define M5EZ_WPS
+#define M5EZ_WPSx
 
 // Turn this off to compile without WiFi (no) OTA updates, no clock)
 #define M5EZ_WIFI
@@ -567,7 +567,7 @@ class ezSettings {
 			static String _update_err2str(uint8_t _error);
 			static ezProgressBar* _update_progressbar;
 			static String _update_error;
-			#ifdef M5EZ_WPS
+			#ifdef M5EZ_WPSx
 				static void _WPShelper(WiFiEvent_t event, system_event_info_t info);
 				static WiFiEvent_t _WPS_event;
 				static String _WPS_pin;
